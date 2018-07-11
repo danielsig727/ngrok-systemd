@@ -6,8 +6,8 @@ Start ngrok tunnels as a systemd service. All ngrok files place in /opt/ngrok..
 
 Usage
 ============
-1. Copy ngrok.service to /etc/systemd/system/ 
-2. Execute from root 'systemctl enable ngrok@<tunnel_name_from_config>.service'
+1. Customize and copy `ngrok.service` to /etc/systemd/system/
+2. Execute from root `systemctl enable ngrok.service`
 3. Execute 'systemctl daemon-reload'
 
 
@@ -21,6 +21,6 @@ Example
             proto:
              tcp: 1194
 	
-3. execute systemctl enable ngrok@openvpn.service
+3. execute `systemctl enable ngrok.service`
 
 
