@@ -1,0 +1,11 @@
+# ref: https://ngrok.com/docs#config
+
+authtoken: <token_here>
+
+region: eu
+update: true
+# web_addr: false
+tunnels:
+  ssh:
+    proto: tcp
+    addr: 22
